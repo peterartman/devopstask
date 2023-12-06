@@ -12,7 +12,7 @@ pipeline {
        stage('Checkout') {
            steps {
                echo 'Checking out..'
-               git 'https://github.com/conorbrooke77/Student-Jenkins-Project.git'
+               git credentialsId: 'peterartman', url: 'https://github.com/peterartman/devopstask.git'
            }
        }
 
